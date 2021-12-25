@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_2"
+    app:startDestination="@id/page3">
+
+    <fragment
+        android:id="@+id/page3"
+        android:name="com.arash.altafi.hilt.views.fragments.Page3"
+        android:label="fragment_page3"
+        tools:layout="@layout/fragment_page3" >
+        <action
+            android:id="@+id/action_page3_to_page4"
+            app:destination="@id/page4" />
+    </fragment>
+    <fragment
+        android:id="@+id/page4"
+        android:name="com.arash.altafi.hilt.views.fragments.Page4"
+        android:label="fragment_page4"
+        tools:layout="@layout/fragment_page4" />
+</navigation>
